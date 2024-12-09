@@ -1,28 +1,28 @@
-.. Raivin User Manual documentation master file, created by
-   sphinx-quickstart on Mon Dec  2 22:39:22 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Maivin User Manual
+==================
 
-Raivin User Manual documentation
-================================
+This is the Maivin User Manual.  It provides information on how to use the Maivin Perception Platform
+in both the vision-only Maivin configuration and the combined vision and radar Raivin configuration.
+This user manual is part of the collection of Maivin documentation which includes the following documents:
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+- Maivin User Manual (current document)
+- Maivin Developer Guide
+- Maivin Model Optimization Guide
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    quickstart
+   hardware
    architecture
    perception
    recording
    playback
    publishing
-   configuration   
-   networking   
+   configuration
+   networking
+   radar
    updates
    release_notes
    troubleshooting
