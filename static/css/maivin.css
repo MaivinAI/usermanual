@@ -1,0 +1,7 @@
+.wy-side-nav-search {
+    background-color: slateblue;
+}
+
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+    color: hsl(248, 76%, 69%);
+}

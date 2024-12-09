@@ -24,3 +24,15 @@ exclude_patterns = ['build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['static']
+html_css_files = ['css/maivin.css']
+html_logo = 'static/maivin.png'
+html_theme_options = {
+    'logo_only': False,
+    'display_version': True,
+}
+
+latex_logo = 'static/maivin_cover.png'
+latex_elements = {
+    # The paper size ('letter' or 'a4').
+    'papersize': 'letter'
+}
