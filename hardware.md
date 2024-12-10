@@ -1,7 +1,4 @@
-.. _hardware:
-
-Hardware
-========
+# Hardware
 
 The Maivin Perception Platform is available in two configurations: Maivin and Raivin.  The Maivin
 configuration is a vision-only platform while the Raivin configuration includes an integrated radar
@@ -26,16 +23,15 @@ cloud data.
 Further details on the RadarExp Fusion Model can be found in the Maivin Model Optimization Guide.  Details
 of recording and annotating radar-vision datasets can be found in the Raivin Dataset Tool User Manual.
 
-Hardware Features
------------------
+## Hardware Features
 
 - Small, optimized form factor for easy deployment for true application testing with enclosure.
 - 2 board architecture with Processor Board, and Images Sensor board.  Allows different image sensors to be used.
 - 12-24V power input with protection for flexible installations. 
 - Flexible communications options including RS-485, Ethernet, and Wi-Fi.
 - M.2 PCIe and USB expansion interface:
-  * Wireless LAN modem support
-  * Additional AI accelerator support
+  - Wireless LAN modem support
+  - Additional AI accelerator support
 - Expansion memory support via SD Card
 - Internal UART console debug interface
 - GNSS receiver
@@ -46,20 +42,15 @@ Hardware Features
 - Waterproof RJ45 for Ethernet
 
 
-Hardware Specifications
------------------------
+## Hardware Specifications
 
 
-Electrical Specifications
--------------------------
+## Electrical Specifications
 
-Mechanical Specifications
--------------------------
 
-.. image:: static/mechanical.png
-   :alt: Maivin Mechanical Drawing
-   :align: center
+## Mechanical Specifications
 
-Connectors
-----------
+![Maivin Mechanical Drawing](static/mechanical.png){align=center}
+
+## Connectors
 

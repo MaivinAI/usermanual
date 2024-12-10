@@ -15,13 +15,20 @@ release = '2024Q4'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    "myst_parser",
+    "sphinxcontrib.mermaid",
     "sphinx.ext.githubpages",
     "sphinx_multiversion",
     "sphinx_rtd_dark_mode",
 ]
 
+myst_fence_as_directive = ["mermaid"]
+myst_enable_extensions = ["attrs_inline"]
+mermaid_cmd = "./node_modules/.bin/mmdc"
+
 templates_path = ['templates']
-exclude_patterns = ['build', 'Thumbs.db', '.DS_Store']
+include_patterns = ['*.rst', '*.md']
+exclude_patterns = ['README.*', 'build', 'Thumbs.db', '.DS_Store']
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -31,10 +38,6 @@ html_show_sourcelink = False
 html_static_path = ['static']
 html_css_files = ['css/maivin.css']
 html_logo = 'static/maivin.png'
-html_theme_options = {
-    'logo_only': False,
-    'display_version': True,
-}
 html_context = {
     'default_mode': 'dark'
 }

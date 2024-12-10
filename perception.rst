@@ -1,4 +1,0 @@
-.. _perception:
-
-Perception
-==========

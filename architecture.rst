@@ -1,4 +1,0 @@
-.. _architecture:
-
-System Architecture
-===================
