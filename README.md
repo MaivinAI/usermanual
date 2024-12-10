@@ -1,4 +1,4 @@
-<img src="static/toonshaded.png" alt="toonshaded" style="zoom:25%;" />
+![toonshaded](static/toonshaded_small.png)
 
 # Maivin User Manual
 
