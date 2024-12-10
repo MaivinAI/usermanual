@@ -1,3 +1,5 @@
+<img src="static/toonshaded.png" alt="toonshaded" style="zoom:25%;" />
+
 # Maivin User Manual
 
 This is the source for the Maivin User Manual.  The documentation is writen using Sphinx and rendered into HTML and PDF formats.
