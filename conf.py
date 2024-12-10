@@ -14,7 +14,7 @@ release = '2024Q4'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ["sphinx_rtd_dark_mode"]
 
 templates_path = ['templates']
 exclude_patterns = ['build', 'Thumbs.db', '.DS_Store']
@@ -29,6 +29,9 @@ html_logo = 'static/maivin.png'
 html_theme_options = {
     'logo_only': False,
     'display_version': True,
+}
+html_context = {
+    'default_mode': 'dark'
 }
 
 latex_logo = 'static/maivin_cover.png'
