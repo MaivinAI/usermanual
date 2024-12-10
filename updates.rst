@@ -9,13 +9,10 @@ distribution uses OSTree to manage software udpates, this updates both the Linux
 including the kernel, drivers, and core system packages as well as the EdgeFirst Middleware which
 provides the perception stack.
 
-Torizon for Maivin releases are published quarterly with patches released as needed.  The version
-naming follows the YYYYQX.PATCH (YEAR*Q*QUARTER) format.  The upstream Torizon OS version number is
-documented in the release notes.  For example first quarterly release for 2025 would be 2025Q1.0
-and the first patch for that release would be 2025Q1.1.
-
-For further information about how the Torizon platform uses ostree, refer to the official Toradex
-documentation `Torizon In-Depth OSTree <https://developer.toradex.com/torizon/6/in-depth/ostree>`_.
+The version naming for Torizon for Maivin follows the YEAR.MONTH.PATCH format.  The YEAR and MONTH
+refer to the data of the initial release of the software and the PATCH is the incremental patch
+release within this release cycle.  The upstream Torizon OS version number is documented in the
+release notes.
 
 OSTree
 ------
@@ -30,13 +27,12 @@ The Torizon for Maivin OSTree repository uses branches to manage the different v
 software.  Three core branches are used:
 
 - torizon/maivin/release
-  * The release branch is the stable branch that is used for production systems.  This branch is
-    updated quarterly with patches released as needed.
+  * The release branch is the stable branch that is used for production systems.  This branch
+    tracks the latest YEAR.MONTH.PATCH release.
 - torizon/maivin/testing
-  * The testing branch is used for testing new software releases.  This branch is updated more
-    frequently than the release branch and may contain software that is not fully tested.  Once
-    a release candidate is ready it is promoted to the release branch.
-- torizon/maivin/dev
+  * The testing branch is used for testing new software releases.  This branch tracks the latest
+    YEAR.MONTH.PATCHrcX release candidates.
+- torizon/maivin/develop
   * The dev branch is used for development of new features.  This branch is updated frequently 
     and is likely to contain breaking or undocumented changes.  This branch should only be used
     by developers working on the platform.
@@ -50,7 +46,6 @@ The currently booted Torizon for Maivin operating system release information can
 .. code-block:: bash
 
     cat /etc/os-release
-
 
 Updating the System
 -------------------
@@ -89,3 +84,10 @@ using the configuration file under /etc/ostree/remotes.d/maivin.conf.
 
 Factory Reset
 -------------
+
+
+Further Reading
+---------------
+
+For further information about how the Torizon platform uses ostree, refer to the official Toradex
+documentation `Torizon In-Depth OSTree <https://developer.toradex.com/torizon/6/in-depth/ostree>`_.
