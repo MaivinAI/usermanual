@@ -138,6 +138,66 @@ FCC regulations require special certifications for colocated transmitters (a dev
 
 WiFi AP mode is configured using the `hostapd` service in Linux.  We describe a common WiFi AP configuration, for more advanced setup refer to the [hostapd documentation][hostapd].
 
+To enable the Maivin Access Point with default configurations simply enable the `hostapd` service.
+
+```bash
+sudo systemctl enable hostapd
+sudo systemctl start hostapd
+```
+
+The Maivin ships with a default hostapd configuration which can be modified for your needs.  The following shows the base configuration which ships with Maivin. The full list of configuration options is documented in the [hostapd.conf][hostapd.conf] reference file.
+
+```
+ssid=Maivin
+wpa_passphrase=maivin
+own_ip_addr=10.10.10.1
+interface=uap0
+
+country_code=CA
+hw_mode=a
+channel=40
+
+ieee80211ac=1
+ieee80211n=1
+ieee80211w=2
+wmm_enabled=1
+
+auth_algs=1
+wpa=2
+wpa_key_mgmt=WPA-PSK
+rsn_pairwise=CCMP
+wpa_pairwise=CCMP
+sae_require_mfp=1
+
+ht_capab=[LDPC][HT40+][GF][SHORT-GI-20][SHORT-GI-40][TX-STBC][DSSS_CCK-40]
+```
+
+```{warning}
+Please make sure to change the default password before enabling WiFi AP mode!
+```
+
+The WiFi AP network configuration file is found under `/etc/systemd/network/hostapd.network` and is managed by SystemD.  The following is the default configuration.  The full list of configuration options is documented in the [systemd network manual][networkd].
+
+```
+[Match]
+Name=wlan0 uap0
+WLANInterfaceType=ap
+
+[Network]
+Address=10.10.10.1/24
+DHCPServer=true
+IPMasquerade=yes
+IPForward=ipv4
+
+[DHCPServer]
+PoolOffset=100
+PoolSize=100
+```
+
+```{tip}
+If you change the network address in hostapd.network make sure it matches the address in hostapd.conf!
+```
+
 ## LTE Modem Setup
 
 Maivin provides an m.2 expansion port which can be used to add an LTE modem to the device.  We offer Maivin and Raivin units pre-configured with an LTE modem and SIM card or a modem can be added by customers themselves following the instructions at the end of this section.
@@ -240,7 +300,8 @@ Installing an LTE modem is an advanced configuration which requires opening up t
 The ethernet1 and can0 interfaces are reserved for internal communications with the radar module on Raivin configurations.  Refer to the Radar chapter for details.
 
 
-
 [nm]: https://networkmanager.dev
 [mm]: https://modemmanager.org
 [hostapd]: https://wireless.docs.kernel.org/en/latest/en/users/documentation/hostapd.html
+[hostapd.conf]: https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf
+[networkd]: https://www.freedesktop.org/software/systemd/man/latest/systemd.network.html
