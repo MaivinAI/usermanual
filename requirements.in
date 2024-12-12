@@ -1,5 +1,6 @@
+myst-parser
 sphinx
 sphinx-multiversion
-myst-parser
 sphinx-rtd-theme
 sphinx-rtd-dark-mode
+sphinxcontrib-mermaid
