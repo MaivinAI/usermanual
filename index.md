@@ -16,6 +16,7 @@ architecture
 perception
 recording
 playback
+foxglove
 publishing
 configuration
 networking
