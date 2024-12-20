@@ -13,46 +13,24 @@ These will describe installing the 1.0.2 version of the EdgeFirst plug-in for Fo
 
 2. If necessary, uninstall any existing versions of the EdgeFirst plug-in
    - Click the User Settings button on the right side of the top menu bar.
-   - Select the Extensions option in the pull-down menu.
-     
-   ```{image} static/foxglove_setting.png
-   :alt: foxglove settings
-   :align: center
-   ```
-
+   - Select the Extensions option in the pull-down menu.   
+   ![Foxglove settings](static/foxglove_setting.png){align=center}
    - Click the EdgeFirst Detect plugin
-   ```{image} static/foxglove_extension_view.png
-   :alt: foxglove extension view
-   :align: center
-   ```
-
+   ![Foxglove extension view](static/foxglove_extension_view.png){align=center}
    - Click the "Uninstall" button
-   ```{image} static/foxglove_install_extenstion.png
-   :alt: foxglove install extenstion
-   :align: center
-   ```
-
-   - Click the "Back to dashboard" button in the top-left corner of the application main window.
+   ![Foxglove install extenstion](static/foxglove_install_extenstion.png){align=center}
+      - Click the "Back to dashboard" button in the top-left corner of the application main window.
 
 3. Install the current version of the EdgeFirst plug-in.
    - Click the User Settings button on the right side of the top menu bar.
    - Select the Extensions option in the pull-down menu.
-   ```{image} static/foxglove_setting.png
-   :alt: foxglove settings
-   :align: center
-   ```
+   ![Foxglove settings](static/foxglove_setting.png){align=center}
    - Click the "Install local extension..." button.
-   ```{image} static/foxglove_extension_view.png
-   :alt: foxglove extension view
-   :align: center
-   ```
+   ![Foxglove extension view](static/foxglove_extension_view.png){align=center}
    - Select the `edgefirst.detect-1.0.2.foxe` file from the downloads directory.
 
 4. Confirm that the 1.0.2 version was installed
-   ```{image} static/foxglove_extension_view_1.0.2.png
-   :alt: foxglove extension view with 1.0.2
-   :align: center
-   ``` 
+   ![Foxglove extension view with 1.0.2](static/foxglove_extension_view_1.0.2.png){align=center}
 
 5. Close Foxglove Studio and restart it.
 
@@ -63,17 +41,10 @@ At the bottom of the [Playback MCAP with Foxglove Studio][rvn_layout] article, t
 2. Load an MCAP file downloaded from the Raivin.
 3. Click the "Layout" buttom in the top taskbar.
 4. Select the "Import from file..." option in the Layout menu.
-   ```{image} static/foxglove_layout.png
-   :alt: foxglove layout
-   :align: center
-   ``` 
+   ![Foxglove layout](static/foxglove_layout.png){align=center}
 5. Go to the download directory holding the JSON layout file and select the file.
 6. Confirm the layout JSON file is loaded.
-
-   ```{image} static/foxglove_scene.png
-   :alt: foxglove layout
-   :align: center
-   ``` 
+   ![Foxglove scene](static/foxglove_scene.png){align=center}
 
 ### Layout Features
 The default Raivin layout includes:
@@ -98,31 +69,19 @@ Not all vision models are able produce detection results.  The default model on 
 
 1. Record a MCAP file that captures the `/model/boxes2d` topic.
 2. Confirm with the "Details" button that the newly recorded MCAP has a `/model/boxes2d` topic.
-   ```{image} static/foxglove_mcap_details.png
-   :alt: foxglove layout
-   :align: center
-   ```
+   ![MCAP details](static/foxglove_mcap_details.png){align=center}
 3. Download the file from the Raivin and load it in Foxglove Studio.
 4. Click the "Settings" gear icon on the right side of the `/camera/h264/` panel task bar.
 5. The `/model/boxes2d` option should appear in the "Image annotations" dropdown menu in the "Image Panel" settings sidebar (bottom left of image below)
-   ```{image} static/foxglove_detect_plugin_view.png
-   :alt: foxglove detect plugin view
-   :align: center
-   ```
+   ![Foxglove detect plugin view](static/foxglove_detect_plugin_view.png){align=center}
 6. Enable the `/model/boxes2d` image annotations by clicking the closed eye icon. This will draw boxes around the detected objects.
-   ```{image} static/foxglove_open_box_eye.png
-   :alt: foxglove detect boxes enabled
-   :align: center
-   ```
+   ![Foxglove detect boxes enabled](static/foxglove_open_box_eye.png){align=center}
 
 ### Viewing Segmentation Messages
 Segmentation masks are contained in the `/model/mask_compressed` topic which is enabled on the Raivin by default.  Because of the amount of data included within this stream, it is not compatible with the default Image drawing API in Foxglove Studio. To visualize the Segmentation Mask, the EdgeFirst Foxglove plug-in must be installed to view segmentation masks in Foxglove.
 
 The instructions to view these masks are the same as above but using the `/model/mask_compressed` topic instead of the `/model/boxes2d` topic.
-   ```{image} static/foxglove_open_seg_eye.png
-   :alt: foxglove detect boxes enabled
-   :align: center
-   ```
+![Foxglove detect boxes enabled](static/foxglove_open_seg_eye.png){align=center}
 
 ### Viewing /radar/cube Messages
 By default, none of the radar topics are recorded as part of an MCAP file.  The Image panel in Foxglove can viewer can 
@@ -130,22 +89,13 @@ By default, none of the radar topics are recorded as part of an MCAP file.  The 
 1. Record a MCAP file that has the `/radar/cube` message in it. See Maivin Dataset Recording for details
 2. Play the MCAP file in Foxglove Studio. See Playback MCAP with Foxglove Studio for details.
 3. In the image panel, the `/radar/cube` topic should appear under the list of valid image topics
-   ```{image} static/foxglove_radar_mask.png
-   :alt: foxglove radar mask
-   :align: center
-   ```
+![Foxglove radar mask](static/foxglove_radar_mask.png){align=center}
 4. Select the `/radar/cube` topic
 5. Change the color mode to Color Map, and select Turbo for the color map
-   ```{image} static/foxglove_radar_msg.png
-   :alt: foxglove radar message
-   :align: center
-   ```
+![Foxglove radar message](static/foxglove_radar_msg.png){align=center}
 6. Leave the value min and value max on auto
 7. You can now see the `/radar/cube` message
-   ```{image} static/foxglove_final_radar_view.png
-   :alt: foxglove final radar view
-   :align: center
-   ```
+![Foxglove final radar view](static/foxglove_final_radar_view.png){align=center}
 
 ### IMU Data Plotting
 To create IMU sensor plots:
@@ -155,31 +105,13 @@ To create IMU sensor plots:
 3. Select `/imu` as the topic
 4. Choose desired parameters (e.g, angular_velocity, x, y, z)
 5. Repeat to add additional plot series as needed
+   ![IMU](static/imu.png){align=center}
+   ![static/imu_to_plot.png](IMU to plot){align=center}
+   ![plot](static/plot.png){align=center}
+   ![IMU message](static/imu_msg.png){align=center}
+   ![IMU velocity](static/imu_velocity.png){align=center}
+   ![IMU final view](static/imu_final_view.png){align=center}
 
-   ```{image} static/imu.png
-   :alt: imu
-   :align: center
-   ```
-   ```{image} static/imu_to_plot.png
-   :alt: imu to plot
-   :align: center
-   ```
-   ```{image} static/plot.png
-   :alt: plot
-   :align: center
-   ```
-   ```{image} static/imu_msg.png
-   :alt: imu message
-   :align: center
-   ```
-   ```{image} static/imu_velocity.png
-   :alt: imu velocity
-   :align: center
-   ```
-   ```{image} static/imu_final_view.png
-   :alt: imu final view
-   :align: center
-   ```
 ## Additional Resources
 
 For more detailed information about Foxglove Studio features, visit the [Foxglove Documentation website][foxglove_doc].

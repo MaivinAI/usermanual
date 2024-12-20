@@ -34,10 +34,7 @@ You can locate available recordings through both the HTTPS GUI and SSH CLI.
    1. Go to the MCAP recording page: `https://<hostname>/mcap`.
    2. Confirm the recording `Directory` is `/media/DATA`
    3. Note the recording file name you wish to replay.
-      ```{image} static/mcap_recorder.png
-      :alt: MCAP Recorder MCAP list
-      :align: center
-      ```
+      ![MCAP Recorder MCAP list](static/mcap_recorder.png){align=center}
 - On the Maivin SSH CLI:
    1. Confirm the current recorder directory location by searching for "STORAGE" option in recording configuration file at `/etc/default/recorder`
       ```bash
@@ -87,9 +84,9 @@ After getting the filename from the current storage location, the replay the MCA
    Dec 18 20:50:14 verdin-imx8mp-15141027 replay[7079]: ERROR: ACCESS UNIT BOUNDARY CHECK
    Dec 18 20:50:14 verdin-imx8mp-15141027 replay[7079]: [2024-12-18T20:50:14Z INFO  maivin_replay::video_decode] Video dimensions are: 1920x1080
    ```
-```{note}
-The `ACCESS UNIT BOUNDARY CHECK` errors in the above output are noting that the beginning of the h.264 video stream does not have a key frame.  This messages are expected and will not impact the performance of the Replay Service.
-```
+   ```{note}
+   The `ACCESS UNIT BOUNDARY CHECK` errors in the above output are noting that the beginning of the h.264 video stream does not have a key frame.  This messages are expected and will not impact the performance of the Replay Service.
+   ```
 When the Replay Service is running, the outputs on the "Segmentation View" and "Occupancy Grid" pages will now be generated from the MCAP recording file instead of the Maivin hardware.
 
 ### Stopping Playback

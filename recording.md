@@ -16,18 +16,12 @@ When active, the Recorder Service:
 In the Web UI
 1. Go to the MCAP recording page: `https://<hostname>/mcap`.
 2. Click the "Recording" toggle to begin capturing data
-   ```{image} static/mcap_recorder.png
-   :alt: MCAP recorder interface
-   :align: center
-   ```
+   ![MCAP recorder interface](static/mcap_recorder.png){align=center}
 3. To stop recording, click the "Recording" toggle a second time.
 
 ### Managing Recordings
 Once a recording is complete, you can see the size in MB and duration in seconds of the captured data on the MCAP page.  You can also get more detailed metadata, such as the topics recorded, by clicking the "Details" button for the MCAP recording.
-```{image} static/mcap_detail.png
-:alt: MCAP file details
-:align: center
-```
+![MCAP file details](static/mcap_detail.png){align=center}
 ```{note}
 MCAP recording file names are saved in `hostname_YYYY_mm_DD_HH_MM_SS.mcap` format, where:
 - _hostname_ is the hostname of the device, e.g. `verdin-imx8mp-071744901`
