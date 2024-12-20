@@ -6,10 +6,9 @@ This is the source for the Maivin User Manual.  The documentation is writen usin
 
 # Setup
 
-Make sure you have `git-lfs` correctly configured as it is required to manage binary assets, such as images.  Otherwise you'll
-need Python with the `virtualenv` module to create a virtual environment (not strictly required but suggested).
+Make sure you have `git-lfs` correctly configured as it is required to manage binary assets, such as images.  Otherwise you'll need Python with the `virtualenv` module to create a virtual environment (not strictly required but suggested).
 
-```
+```bash
 git clone git@github.com:MaivinAI/manual.git
 cd manual
 git lfs pull
