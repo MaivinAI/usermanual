@@ -29,8 +29,9 @@ streaming and recording of messages and interoperability with industry standard 
 
 ```mermaid
 graph LR
-    camera --> model --> zenoh    
-    radarpub --> fusion --> zenoh
+    camera --> model["vision model"] --> zenoh    
+    radarpub --> fusion["fusion model"] --> zenoh
+    camera --> fusion
     radarpub --> zenoh
     camera --> zenoh    
     model --> fusion
@@ -38,4 +39,6 @@ graph LR
     imu --> zenoh
     zenoh --> recorder --> mcap
     zenoh --> webui --> https
+    zenoh --> user["user apps"]
+    https --> user
 ```

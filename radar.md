@@ -25,24 +25,14 @@ The `can0` interface is configured for 500kbps.  The Radar Publishing Service ma
 
 ### Ethernet Configuration
 
-The radar module streams the low-level radar data cube over an ethernet interface which is internally connected to the Raivin's `ethernet1` interface.  The connection is managed as `network1` using the NetworkManager configuration available at `/etc/NetworkManager/system-connections/network1.nmconnection`.
+The radar module streams the low-level radar data cube over an ethernet interface which is internally connected to the Raivin's `ethernet1` interface.  The connection is managed through the systemd network framework using the configuration file `/etc/systemd/network/ethernet1.network` along with the `ethernet1-master.service` systemd service which handles configuring the automotive ethernet PHY (1000Base-T1) as the connection master.  The `ethernet1-master.service` should be enabled using `sudo systemctl enable ethernet1-master` if not already enabled.
 
 ```
-[connection]
-id=network1
-type=ethernet
-interface-name=ethernet1
+[Match]
+Name=ethernet1
 
-[ethernet]
-
-[ipv4]
-address1=192.168.11.17/24
-method=manual
-
-[ipv6]
-method=disabled
-
-[proxy]
+[Network]
+Address=192.168.11.17/24
 ```
 
 [radar]: https://www.smartmicro.com/automotive-radar/drvegrd-line#c20151
