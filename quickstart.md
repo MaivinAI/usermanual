@@ -7,7 +7,7 @@ The Raivin will have an eight digit number on the back of the device.  This is t
 On Windows machines, you will not need to add the '.local' suffix.
 ```
 
-The Raivin has a web-interface that can be connected to via both HTTP and HTTPS by entering `http://verdin-imx8mp-<id>.local`.  On first connection to the web-interface, you will get a "Your connection is not private" warning.
+The Raivin has a web interface that can be connected to via both HTTP and HTTPS by entering `http://verdin-imx8mp-<id>.local`.  On first connection to the web interface, you will get a "Your connection is not private" warning.
 ![Raivin Main Page](static/quickStart-sslCert.png){align=center}
 This is expected and nothing to worry about -- the HTTPS connection needs a SSL certificate which the vision module does not have.  Click the "Advanced" button, and then "Proceed to" link.
 ![Raivin Main Page](static/quickStart-sslAdvanced.png){align=center}
@@ -63,7 +63,7 @@ The Occupancy Page shows the raw, radar data, coloured by radar cross-section (R
 # The GPS Page
 The GPS page shows an interactive map centered on the device's location.
 ![GPS Page](static/quickStart-gps.png){align=center}
-This should be familiar to anyone who has used standard map web-interfaces.  The map can be moved by dragging with left-mouse button (or touch with a touchscreen-enabled device).  The "+" and "-" buttons on the left will zoom-in and zoom-out on the map.  The "Refresh" button will re-center the map on the device's location.  The latitude and longitude are also reported on the web interface.
+This should be familiar to anyone who has used standard map web interfaces.  The map can be moved by dragging with left-mouse button (or touch with a touchscreen-enabled device).  The "+" and "-" buttons on the left will zoom-in and zoom-out on the map.  The "Refresh" button will re-center the map on the device's location.  The latitude and longitude are also reported on the web interface.
 
 # The IMU Page
 The IMU page shows the device's orientation in 3D.
