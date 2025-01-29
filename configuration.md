@@ -27,6 +27,7 @@ The rest of the page reports upon which topics are recording and allows the user
 - **/camera/info**: This includes information about the video sensor.
 - **/camera/h264**: This contains the raw-video output of the video sensor, in H.264 format.
 
+These topics are parts of the "Localization Topics" and "Camera Topics", which are currently locked
 
 #### Model Recording
 Checking the "/model" topic box enables the following topics:
@@ -37,11 +38,12 @@ Checking the "/model" topic box enables the following topics:
 #### Radar Recording
 Checking the "/radar" topic box enables the following topics:
 - **/radar/info**: This contains information regarding the radar.
-- **/radar/targets**: This contains the target information from the radar sensor..
+- **/radar/targets**: This contains the target information from the radar sensor.
+- **/radar/clusters**:  This contains the clustered information from the radar sensor.
 It also opens up the "/radar/cube" topic that can be enabled.
 
 #### Radar Cube
-- **/radar/cube**: The raw radar cube output.  This can be a lot of data, and we provide
+- **/radar/cube**: The raw radar cube data output.  This can be a lot of data, and we provide
 expose a setting to user to limit this.
 
 The Radar Cube FPS setting limits the radar cube framerate to reduce recording size.  While the camera topic is encoded with H.264 which makes use of keyframes to significantly reduce the topic size, no such compression is available for the radar cube which means only the COMPRESSION parameter applies (if enabled).  While capturing datasets, the full 18 FPS is typically not required and it is recommended to set this parameter to 1-5 FPS to reduce the MCAP size.
@@ -258,15 +260,15 @@ Log level for the application, relevant sub-filters include 'maivin-fusion'.  Re
 ### Radar Input Topic
 The radar topic to use for a source of targets.  This is typically '/radar/clusters' which provides better target stability compared to the raw '/radar/targets' topic.
 
-### Threshold
-Required targets (raw or clustered) to acknowledge the target as real as opposed to noise that is filtered out.
-
 ### Occlusion Angle Limit and Occlusion Range Limit
 Points that are more than the "Occlusion Range Limit", in meters, behind and less than the 
 "Occlusion Angle Limit", in degrees, from a classified point will not be classified. This prevent false positives from points that should be occluded.
 
-### Range and Angle Settings
-The range and angle bins are used to intepret the radar model.  They are also used for occupancy if the input PCD is not clustered.
+### Occupancy Settings
+The following settings are only used when the radar PCD is unclustered, usually by setting the radar input topic to `/radar/targets` instead of `/radar/clusters`.  These settings configure the way Fusion service generates occupancy output from the unclustered radar PCD.
+
+#### Threshold
+The number of required targets to acknowledge the target as real as opposed to noise that is filtered out.
 
 #### Range Bin Limit
 The minimum and maximum range to use for range bins, in meters.
