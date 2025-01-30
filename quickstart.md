@@ -66,30 +66,17 @@ The ribbon at the top of the Raivin web interface is available on every page of 
 On the right side of the ribbon, we have a grouping of two indicators an a dropdown menu.  These items are only shown on the Main Page and the pages clicked from the five cards on the Main Page.  These elements, from left to right, are:
 
 4. The Recording Indicator, shown as a red circle when recording from the sensors.
-5. The State and Status (S&S) indicator.
+5. The System Status Indicator.
 6. The Status Information Dropdown button.
 
-### State and Status
-Mousing over the S&S field will give a brief summary of any problems.
+### System Status Indicator
+Mousing over the System Status Indicator field will give a brief summary of any problems.
 ![Dropdown reporting good](static/quickStart-statusDropDownGood.png){align=center}
 *Everything is good!*
 ![Dropdown reporting bad](static/quickStart-statusDropDownDegraded.png){align=center}
 *The Radar Publishing service is down.*
 
-There are three operational states for the Raivin, describing if the user as the set the Raivin to display the live sensor feeds, recorded sensor feeds, or neither.  Those states are:
-1. **Live Mode**: The Raivin is displaying the live camera and radar module feeds.
-2. **Replay Mode**:  The Raivin is displaying the recorded services
-3. **Stopped**:  The Raivin is not displaying any feeds, live or recorded.
-
-How to set these operational states is described in the [Recording section](./recording.md).
-
-There are two status types for the Raivin:
-1. **Active**: All relavent services for a state are up.  This will show up as reporting the state in green text in a light-green button.
-2. **Degraded**: At least one service is not up.  This will show up as reporting the state in brown text in a yellow button.  It will also include the word "Degraded" after the operational state.
-
-Clicking on the Information icon will get you a listing of the current services, including a "Configure Services" link to the "Service Status" page.
-![Service List](static/quickStart-services.png)
-
+More on these status can be found in the [Status Monitoring section](./replay.md#status-monitoring)
 ## The Visualization Pages
 These pages contain the user-facing functionality of the vision module.
 
