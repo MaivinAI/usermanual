@@ -43,5 +43,11 @@ The Raivin has a web interface that can be connected to via both HTTP and HTTPS 
 This is expected and nothing to worry about -- the HTTPS connection needs a SSL certificate which the vision module does not have.  Click the "Advanced" button, and then "Proceed to" link.
 ![Raivin Advanced Information](static/quickStart-sslAdvanced.png){align=center}
 
-After all that, you should see the [Maivin Main Page](./ui_walkthrough.md).
-![Raivin Main Page](static/quickStart-mainPage.png){align=center}
+After all that, you should see the [Raivin Main Page](./ui_walkthrough.md).
+![Raivin Main Page](static/quickStart-mainPage.png){align=center}.  If you have a Maivin, you will see the Maivin Main Page instead:
+![Maivin Main Page](static/ui-maivinMain.png){align=center}
+
+From here, we recommend that you check out the Segmentation View page by clicking the "Segmentation View" card.  For a Raivin, it looks as so:
+![Segmentation Page](static/quickStart-segmentation.png){align=center}
+and for a Maivin:
+![Maivin Segmentation Page](static/ui-maivinSegmentation.png){align=center}
