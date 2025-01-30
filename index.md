@@ -11,11 +11,9 @@ This is the Maivin User Manual.  It provides information on how to use the Maivi
 quickstart
 hardware
 architecture
-perception
 recording
 playback
 foxglove
-publishing
 configuration
 networking
 radar
