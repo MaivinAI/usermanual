@@ -1,7 +1,8 @@
-# The Raivin Web Interface
-Let's introduce the Raivin web interface and the various pages and functionalities available to the user.
+# Web UI Walkthrough
 
-### The Main Page
+This chapter will walk you through the Maivin's Web User Interface.
+
+## The Main Page
 The Main Page of the Raivin web interface should look as follows:
 ![Raivin Main Page](static/quickStart-mainPage.png){align=center}
 
