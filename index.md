@@ -9,6 +9,7 @@ This is the Maivin User Manual.  It provides information on how to use the Maivi
 ```{toctree}
 :maxdepth: 2   
 quickstart
+walkthrough
 hardware
 architecture
 recording
