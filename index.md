@@ -20,5 +20,5 @@ networking
 radar
 updates
 release_notes
-troubleshooting
+issues
 ```

@@ -30,7 +30,7 @@ The currently booted TfM operating system release information can be read from t
 cat /etc/os-release
 ```
 
-## Updating the System
+### Updating the System
 The TfM system can be updated using the OSTree client.  The client is a command-line utility that can be used to manage the system snapshots.
 
 To update the release:
@@ -69,17 +69,7 @@ This will show the currently loaded snapshot and the rollback snapshot if one is
 The Torizon for Maivin OSTree repository is hosted by Au-Zone Technologies and is available [here][auz-ostree].  This repository is accessed through the OSTree client 
 using the configuration file under `/etc/ostree/remotes.d/maivin.conf`.
 
-## Factory Reset
-
-# Known Issues
-### "SSL peer certificate or SSH remote key was not OK" during `ostree pull`
-If you update the `ethernet0` network interface without a reboot and try to run an `ostree pull` command, you may get the following error:
-```
-error: While fetching https://maivin.deepviewml.com/ostree/summary.sig: [60] SSL peer certificate or SSH remote key was not OK
-```
-If so, reboot the system with the `sudo reboot` command.  This should address the issue.
-
-# Further Reading
+## Further Reading
 For further information about how the Torizon platform uses ostree, refer to the official Toradex documentation [Torizon In-Depth OSTree][tor-ostree].
 
 [torizon]: https://developer.toradex.com/torizon/
