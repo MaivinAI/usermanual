@@ -78,7 +78,7 @@ This setting enables or disables the /camera/h.264 topic.
 This setting enables or disables the /camera/jpeg topic.
 
 ## WebUI Settings Page
-This page configures how information is displayed on the [Segmentation Page](./quickstart.md#the-segmentation-page).
+This page configures how information is displayed on the [Segmentation Page](./ui_walkthrough.md#the-segmentation-page).
 ![WebUI Settings page](static/configuration-webui.png){align=center}
 
 ```{tip}
