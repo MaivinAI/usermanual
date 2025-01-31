@@ -49,6 +49,9 @@ If you have a Maivin, you will see the Maivin Main Page instead:
 ![Maivin Main Page](static/ui-maivinMain.png){align=center}
 
 From here, we recommend that you check out the Segmentation View page by clicking the "Segmentation View" card.  For a Raivin, it looks as so:  
-![Segmentation Page](static/quickStart-segmentation.png){align=center}
+![Segmentation Page](static/quickStart-segmentation.png){align=center}  
 and for a Maivin:  
-![Maivin Segmentation Page](static/ui-maivinSegmentation.png){align=center}
+![Maivin Segmentation Page](static/ui-maivinSegmentation.png){align=center}  
+```{note}
+The ultra-short model included in this release was trained for fixed camera and mostly tested indoors.
+```
