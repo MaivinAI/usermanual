@@ -13,7 +13,7 @@ First, verify that your Maivin is turned on and connected to the network.  You c
 ```{tip}
 Windows does not need the `.local` hostname suffix.
 ```
-In a command prompt, ping the Maivin's hostname.
+In a command prompt, ping the Maivin's hostname.  
 ![ping results](static/ssh-ping.png){align=center}
 If the Maivin does not reply, please confirm the Maivin is powered on and connected to the network.
 
@@ -22,14 +22,14 @@ Once the ping is successful, use your SSH client to connect to the 'torizon' acc
 ```shell
 ssh torizon@Maivin-hostname
 ```
-For example:
+For example:  
 ![are you sure?](static/ssh-areYouSure.png){align=center}
 On the first log of a new or updated Maivin, you may get the "authenticity of host" error.  This is expected, and type "yes" to continue connecting.
 
-On a new Raivin, it will ask you to change the default password to a new password.  Re-enter the 'torizon' password, and then enter a new password twice.  After you change the default password, the SSH session will close so you can re-login with the new password.
+On a new Raivin, it will ask you to change the default password to a new password.  Re-enter the 'torizon' password, and then enter a new password twice.  After you change the default password, the SSH session will close so you can re-login with the new password.  
 ![new password](static/ssh-changePassword.png){align=center}
 
-Once you've finished those steps, the next and all future SSH sessions should look as follows:
+Once you've finished those steps, the next and all future SSH sessions should look as follows:  
 ![new password](static/ssh-login.png){align=center}
 
 You are now at the Linux command-line prompt for the Raivin!

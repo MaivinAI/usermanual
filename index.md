@@ -13,7 +13,7 @@ walkthrough
 hardware
 architecture
 recording
-playback
+replay
 foxglove
 configuration
 networking
