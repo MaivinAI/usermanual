@@ -18,8 +18,9 @@ These will describe installing the 1.0.2 version of the EdgeFirst plug-in for Fo
    - Click the EdgeFirst Detect plugin
    ![Foxglove extension view](static/foxglove_extension_view.png){align=center}
    - Click the "Uninstall" button
+
    ![Foxglove install extenstion](static/foxglove_install_extenstion.png){align=center}
-      - Click the "Back to dashboard" button in the top-left corner of the application main window.
+   - Click the "Back to dashboard" button in the top-left corner of the application main window.
 
 3. Install the current version of the EdgeFirst plug-in.
    - Click the User Settings button on the right side of the top menu bar.
@@ -30,6 +31,7 @@ These will describe installing the 1.0.2 version of the EdgeFirst plug-in for Fo
    - Select the `edgefirst.detect-1.0.2.foxe` file from the downloads directory.
 
 4. Confirm that the 1.0.2 version was installed
+
    ![Foxglove extension view with 1.0.2](static/foxglove_extension_view_1.0.2.png){align=center}
 
 5. Close Foxglove Studio and restart it.

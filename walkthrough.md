@@ -30,8 +30,10 @@ On the right side of the ribbon, we have a grouping of two indicators an a dropd
 
 ### System Status Indicator
 Mousing over the System Status Indicator field will give a brief summary of any problems.
+
 ![Dropdown reporting good](static/quickStart-statusDropDownGood.png){align=center}
 *Everything is good!*
+
 ![Dropdown reporting bad](static/quickStart-statusDropDownDegraded.png){align=center}
 *The Radar Publishing service is down.*
 
