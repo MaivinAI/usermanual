@@ -13,23 +13,23 @@ These will describe installing the 1.0.2 version of the EdgeFirst plug-in for Fo
 
 2. If necessary, uninstall any existing versions of the EdgeFirst plug-in
    - Click the User Settings button on the right side of the top menu bar.
-   - Select the Extensions option in the pull-down menu.   
+   - Select the Extensions option in the pull-down menu.  
    ![Foxglove settings](static/foxglove_setting.png){align=center}
-   - Click the EdgeFirst Detect plugin
+   - Click the EdgeFirst Detect plugin  
    ![Foxglove extension view](static/foxglove_extension_view.png){align=center}
-   - Click the "Uninstall" button
+   - Click the "Uninstall" button  
    ![Foxglove install extenstion](static/foxglove_install_extenstion.png){align=center}
-      - Click the "Back to dashboard" button in the top-left corner of the application main window.
+   - Click the "Back to dashboard" button in the top-left corner of the application main window.
 
 3. Install the current version of the EdgeFirst plug-in.
    - Click the User Settings button on the right side of the top menu bar.
-   - Select the Extensions option in the pull-down menu.
+   - Select the Extensions option in the pull-down menu.  
    ![Foxglove settings](static/foxglove_setting.png){align=center}
-   - Click the "Install local extension..." button.
+   - Click the "Install local extension..." button.  
    ![Foxglove extension view](static/foxglove_extension_view.png){align=center}
    - Select the `edgefirst.detect-1.0.2.foxe` file from the downloads directory.
 
-4. Confirm that the 1.0.2 version was installed
+4. Confirm that the 1.0.2 version was installed  
    ![Foxglove extension view with 1.0.2](static/foxglove_extension_view_1.0.2.png){align=center}
 
 5. Close Foxglove Studio and restart it.
@@ -40,10 +40,10 @@ At the bottom of the [Playback MCAP with Foxglove Studio][rvn_layout] article, t
 1. Open Foxglove Studio
 2. Load an MCAP file downloaded from the Raivin.
 3. Click the "Layout" buttom in the top taskbar.
-4. Select the "Import from file..." option in the Layout menu.
+4. Select the "Import from file..." option in the Layout menu.  
    ![Foxglove layout](static/foxglove_layout.png){align=center}
 5. Go to the download directory holding the JSON layout file and select the file.
-6. Confirm the layout JSON file is loaded.
+6. Confirm the layout JSON file is loaded.  
    ![Foxglove scene](static/foxglove_scene.png){align=center}
 
 ### Layout Features
@@ -68,19 +68,19 @@ Not all vision models are able produce detection results.  The default model on 
 ```
 
 1. Record a MCAP file that captures the `/model/boxes2d` topic.
-2. Confirm with the "Details" button that the newly recorded MCAP has a `/model/boxes2d` topic.
+2. Confirm with the "Details" button that the newly recorded MCAP has a `/model/boxes2d` topic.  
    ![MCAP details](static/foxglove_mcap_details.png){align=center}
 3. Download the file from the Raivin and load it in Foxglove Studio.
 4. Click the "Settings" gear icon on the right side of the `/camera/h264/` panel task bar.
-5. The `/model/boxes2d` option should appear in the "Image annotations" dropdown menu in the "Image Panel" settings sidebar (bottom left of image below)
+5. The `/model/boxes2d` option should appear in the "Image annotations" dropdown menu in the "Image Panel" settings sidebar (bottom left of image below).  
    ![Foxglove detect plugin view](static/foxglove_detect_plugin_view.png){align=center}
-6. Enable the `/model/boxes2d` image annotations by clicking the closed eye icon. This will draw boxes around the detected objects.
+6. Enable the `/model/boxes2d` image annotations by clicking the closed eye icon. This will draw boxes around the detected objects.  
    ![Foxglove detect boxes enabled](static/foxglove_open_box_eye.png){align=center}
 
 ### Viewing Segmentation Messages
 Segmentation masks are contained in the `/model/mask_compressed` topic which is enabled on the Raivin by default.  Because of the amount of data included within this stream, it is not compatible with the default Image drawing API in Foxglove Studio. To visualize the Segmentation Mask, the EdgeFirst Foxglove plug-in must be installed to view segmentation masks in Foxglove.
 
-The instructions to view these masks are the same as above but using the `/model/mask_compressed` topic instead of the `/model/boxes2d` topic.
+The instructions to view these masks are the same as above but using the `/model/mask_compressed` topic instead of the `/model/boxes2d` topic.  
 ![Foxglove detect boxes enabled](static/foxglove_open_seg_eye.png){align=center}
 
 ### Viewing /radar/cube Messages
@@ -88,13 +88,13 @@ By default, none of the radar topics are recorded as part of an MCAP file.  The 
 
 1. Record a MCAP file that has the `/radar/cube` message in it. See Maivin Dataset Recording for details
 2. Play the MCAP file in Foxglove Studio. See Playback MCAP with Foxglove Studio for details.
-3. In the image panel, the `/radar/cube` topic should appear under the list of valid image topics
+3. In the image panel, the `/radar/cube` topic should appear under the list of valid image topics.  
 ![Foxglove radar mask](static/foxglove_radar_mask.png){align=center}
 4. Select the `/radar/cube` topic
-5. Change the color mode to Color Map, and select Turbo for the color map
+5. Change the color mode to Color Map, and select Turbo for the color map.  
 ![Foxglove radar message](static/foxglove_radar_msg.png){align=center}
 6. Leave the value min and value max on auto
-7. You can now see the `/radar/cube` message
+7. You can now see the `/radar/cube` message.  
 ![Foxglove final radar view](static/foxglove_final_radar_view.png){align=center}
 
 ### IMU Data Plotting
@@ -104,7 +104,7 @@ To create IMU sensor plots:
 2. Click "Add a Series"
 3. Select `/imu` as the topic
 4. Choose desired parameters (e.g, angular_velocity, x, y, z)
-5. Repeat to add additional plot series as needed
+5. Repeat to add additional plot series as needed  
    ![IMU](static/imu.png){align=center}
    ![static/imu_to_plot.png](IMU to plot){align=center}
    ![plot](static/plot.png){align=center}
