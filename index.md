@@ -1,10 +1,10 @@
 # Maivin User Manual
 
-This is the Maivin User Manual.  It provides information on how to use the Maivin Perception Platform in both the vision-only Maivin configuration and the combined vision and radar Raivin configuration. This user manual is part of the collection of Maivin documentation which includes the following documents:
+This is the Maivin User Manual.  It provides information on how to use the Maivin Perception Platform in both the vision-only Maivin configuration and the combined vision and radar Raivin configuration. This user manual is part of the collection of EdgeFirst Studio documentation which includes the following documents:
 
-- Maivin User Manual (current document)
-- Maivin Developer Guide
-- Maivin Model Optimization Guide
+- [Maivin User Manual](http://maivinai.github.io/usermanual) (current document)
+- EdgeFirst Perception Developer's Guide
+- [Deep View Enterprise MLOps](https://help.dveml.com)
 
 ```{toctree}
 :maxdepth: 2   
