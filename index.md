@@ -18,6 +18,7 @@ foxglove
 configuration
 networking
 radar
+advanced_foxglove
 updates
 release_notes
 issues
