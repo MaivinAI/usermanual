@@ -27,13 +27,20 @@ The rest of the page reports upon which topics are recording and allows the user
 - **/camera/info**: This includes information about the video sensor.
 - **/camera/h264**: This contains the raw-video output of the video sensor, in H.264 format.
 
-These topics are parts of the "Localization Topics" and "Camera Topics", which are currently locked
+These topics are parts of the "Localization Topics" and "Camera Topics", which are currently locked.
+
+Clicking on the "Model Topics" box will enable recording of all the Model and Fusion recording topics, as described below.
 
 #### Model Recording
 Checking the "/model" topic box enables the following topics:
 - **/model/info**: This contains information regarding the model being run.
-- **/model/mask_compressed**: This contains the output of the segmentation model if running.
 - **/model/boxes2d**: This includes detection boxes from the model, if the model supports object detection.
+- **/model/mask_compressed**: This contains the output of the segmentation model if running.
+
+#### Fusion Recording
+Checking the "/fusion" topic box enables recording of the following topics:
+- **/fusion/targets**: This contains information regarding the analysis of the radar targets, specifically which are people and which are not.
+- **/fusion/occupancy**: This contains information regarding the occupancy of targets on a polar grid emanating from the camera.
 
 #### Radar Recording
 Checking the "/radar" topic box enables the following topics:
@@ -78,7 +85,7 @@ This setting enables or disables the /camera/h.264 topic.
 This setting enables or disables the /camera/jpeg topic.
 
 ## WebUI Settings Page
-This page configures how information is displayed on the [Segmentation Page](./ui_walkthrough.md#the-segmentation-page).
+This page configures how information is displayed on the [Segmentation Page](./walkthrough.md#the-segmentation-page).
 ![WebUI Settings page](static/configuration-webui.png){align=center}
 
 ```{tip}
@@ -243,7 +250,7 @@ Temporal clustering of the radar targets using the window size.  The window size
 The eplison value to be used for Density-Based Spatial Clustering and Apllication with Noise(DBSCAN) clustering. Higher values mean points further from each other can be clustered together.
 
 #### Clustering Parameter Scale
-Clustering DBSCAN parameter scaling. Parameter order is x, y, z, speed. Set the appropriate axis to 0 to ignore that axis. Default setting of [0.5 1.0 0.0 0.0] means that only xy distances are taken into account.
+Clustering DBSCAN parameter scaling. Parameter order is x, y, z, speed. Set the appropriate axis to 0 to ignore that axis. Default setting of `[0.5 1.0 0.0 0.0]` means that only xy distances are taken into account.
 
 #### Clustering Point Limit
 The minimum number of points per cluster for DBSCAN clustering.
