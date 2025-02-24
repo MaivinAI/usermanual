@@ -27,13 +27,20 @@ The rest of the page reports upon which topics are recording and allows the user
 - **/camera/info**: This includes information about the video sensor.
 - **/camera/h264**: This contains the raw-video output of the video sensor, in H.264 format.
 
-These topics are parts of the "Localization Topics" and "Camera Topics", which are currently locked
+These topics are parts of the "Localization Topics" and "Camera Topics", which are currently locked.
+
+Clicking on the "Model Topics" box will enable recording of all the Model and Fusion recording topics, as described below.
 
 #### Model Recording
 Checking the "/model" topic box enables the following topics:
 - **/model/info**: This contains information regarding the model being run.
-- **/model/mask_compressed**: This contains the output of the segmentation model if running.
 - **/model/boxes2d**: This includes detection boxes from the model, if the model supports object detection.
+- **/model/mask_compressed**: This contains the output of the segmentation model if running.
+
+#### Fusion Recording
+Checking the "/fusion" topic box enables recording of the following topics:
+- **/fusion/targets**: This contains information regarding the analysis of the radar targets, specifically which are people and which are not.
+- **/fusion/occupancy**: This contains information regarding the occupancy of targets on a polar grid emanating from the camera.
 
 #### Radar Recording
 Checking the "/radar" topic box enables the following topics:
