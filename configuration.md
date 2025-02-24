@@ -85,7 +85,7 @@ This setting enables or disables the /camera/h.264 topic.
 This setting enables or disables the /camera/jpeg topic.
 
 ## WebUI Settings Page
-This page configures how information is displayed on the [Segmentation Page](./ui_walkthrough.md#the-segmentation-page).
+This page configures how information is displayed on the [Segmentation Page](./walkthrough.md#the-segmentation-page).
 ![WebUI Settings page](static/configuration-webui.png){align=center}
 
 ```{tip}
@@ -250,7 +250,7 @@ Temporal clustering of the radar targets using the window size.  The window size
 The eplison value to be used for Density-Based Spatial Clustering and Apllication with Noise(DBSCAN) clustering. Higher values mean points further from each other can be clustered together.
 
 #### Clustering Parameter Scale
-Clustering DBSCAN parameter scaling. Parameter order is x, y, z, speed. Set the appropriate axis to 0 to ignore that axis. Default setting of [0.5 1.0 0.0 0.0] means that only xy distances are taken into account.
+Clustering DBSCAN parameter scaling. Parameter order is x, y, z, speed. Set the appropriate axis to 0 to ignore that axis. Default setting of `[0.5 1.0 0.0 0.0]` means that only xy distances are taken into account.
 
 #### Clustering Point Limit
 The minimum number of points per cluster for DBSCAN clustering.
