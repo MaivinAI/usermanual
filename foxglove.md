@@ -1,5 +1,5 @@
 # Foxglove Studio
-[Foxglove Studio][foxglove] is an open source application developed by FoxGlove Technologies, Inc.  It is part of the [Robot Operating System (ROS)][ros] ecosystem and supports playback for MCAP recordings.  You can [download Foxglove Studio][foxglove_dl] as well as our [EdgeFirst plug-in for Foxglove][github_edgefirst_dl] and customized [Raivin Foxglove layout][rvn_layout].
+[Foxglove Studio][foxglove] is an open source application developed by FoxGlove Technologies, Inc.  It is part of the [Robot Operating System (ROS)][ros] ecosystem and supports playback for MCAP recordings.  You can [download Foxglove Studio][foxglove_dl] as well as our [EdgeFirst plug-in for Foxglove][github_edgefirst_dl] and customized [Raivin Foxglove layout](static/Raivin_Foxglove_Layout.json).
 
 ## Getting Started
 Let's discuss how to install our custom plug-ins once you've installed Foxglove Stuiods.
@@ -35,7 +35,7 @@ These will describe installing the 1.0.2 version of the EdgeFirst plug-in for Fo
 5. Close Foxglove Studio and restart it.
 
 ### Installing Foxglove Layout
-At the bottom of the [Playback MCAP with Foxglove Studio][rvn_layout] article, there is a Foxglove layout JSON file.  Please download it.
+We have included a [custom Raivin Layout for Foxglove Studio](static/Raivin_Foxglove_Layout.json).To install it, please download it and follow the instructions below.
 
 1. Open Foxglove Studio
 2. Load an MCAP file downloaded from the Raivin.
@@ -122,4 +122,3 @@ For more detailed information about Foxglove Studio features, visit the [Foxglov
 [foxglove_doc]: https://docs.foxglove.dev/docs/introduction/
 [github_edgefirst_dl]: https://github.com/MaivinAI/foxglove-edgefirst/releases/latest
 [ros]: https://ros.org/
-[rvn_layout]:  https://support.deepviewml.com/hc/en-us/articles/24753480203661-Playback-MCAP-with-Foxglove-Studio
