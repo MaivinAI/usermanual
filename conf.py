@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Maivin User Manual'
+project = 'EdgeFirst Modules User Manual'
 copyright = '2024, Au-Zone Technologies'
 author = 'Au-Zone Technologies'
 release = '2024Q4'

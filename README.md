@@ -1,8 +1,8 @@
 ![toonshaded](static/toonshaded_small.png)
 
-# Maivin User Manual
+# EdgeFirst Modules User Manual
 
-This is the source for the Maivin User Manual.  The documentation is writen using Sphinx and rendered into HTML and PDF formats.
+This is the source for the EdgeFirst Modules User Manual.  The documentation is writen using Sphinx and rendered into HTML and PDF formats.
 
 # Setup
 
