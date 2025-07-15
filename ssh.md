@@ -111,4 +111,4 @@ scp torizon@verdin-imx8mp-15141029:/media/DATA/verdin-imx8mp-15141029_2025_01_29
 ```
 
 [openssh]: https://www.openssh.com/
-[putty]: https://www.putty.org/
+[putty]: https://www.chiark.greenend.org.uk/~sgtatham/putty/
