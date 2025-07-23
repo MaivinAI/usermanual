@@ -55,3 +55,24 @@ and for a Maivin:
 ```{note}
 The ultra-short model included in this release was trained for fixed camera and mostly tested indoors.
 ```
+
+## Troubleshooting: Mask Not Visible
+
+If the mask is not visible on the Segmentation Page, you can verify and correct the topic configuration using one of the following methods:
+
+### Method 1: Using WebUI
+1. Click on the Gear Icon on the top right of the web page
+![NavBar Gear Icon](static/navbar-settings.png){align=center}  
+2. Navigate to the WebUI Settings and scroll to the bottom
+3. You will find a field called "Mask Topic"
+![WebUI Settings Page](static/webui-settings.png){align=center}  
+4. Make sure and update the topic to "/rt/model/mask_compressed/"
+5. Once you update the topic hit "Save Configuration"
+6. Now you should be able to navigate back to the Segmentation Page and see the mask
+
+### Method 2: Using Terminal
+1. Open a SSH terminal using `ssh torizon@verdin-imx8mp-xxxxx`
+2. The password should be "1"
+3. Using `sudo vi /etc/default/webui` update the MASK_TOPIC to "/rt/model/mask_compressed/"
+4. Then restart the webui service using `sudo systemctl restart webui`
+5. Now the Demo Page should be working
