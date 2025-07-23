@@ -71,7 +71,7 @@ If the mask is not visible on the Segmentation Page, you can verify and correct 
 6. Now you should be able to navigate back to the Segmentation Page and see the mask
 
 ### Method 2: Using Terminal
-1. Open a SSH terminal using `ssh torizon@verdin-imx8mp-15141093`
+1. Open a SSH terminal using `ssh torizon@verdin-imx8mp-xxxxx`
 2. The password should be "1"
 3. Using `sudo vi /etc/default/webui` update the MASK_TOPIC to "/rt/model/mask_compressed/"
 4. Then restart the webui service using `sudo systemctl restart webui`
