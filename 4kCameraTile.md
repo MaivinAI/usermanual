@@ -123,6 +123,9 @@ VideoManager::new_with_crop(
 
 # Camera resolution (should be 4K for tiles)
 --camera-size 3840 2160
+
+# How to Run
+sudo ./edgefirst-camera --h264-tiles --h264-tiles-fps 30 --camera-size 3840 2160 --stream-size 3840 2160
 ```
 
 #### Environment Variables
