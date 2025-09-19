@@ -125,7 +125,7 @@ VideoManager::new_with_crop(
 --camera-size 3840 2160
 
 # How to Run
-sudo ./edgefirst-camera --h264-tiles --h264-tiles-fps 30 --camera-size 3840 2160 --stream-size 3840 2160
+sudo ./edgefirst-camera --h264-tiles --h264-tiles-fps 30 --camera-size 3840 2160
 ```
 
 #### Environment Variables
